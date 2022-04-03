@@ -8,11 +8,12 @@
   --semi-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --main-hover: #ea7600;
 }
 
 @font-face {
   font-family: Neucha;
-  src: url("assets/Neucha-Regular.ttf");
+  src: url("/assets/Neucha-Regular.ttf");
 }
 
 html {
@@ -21,15 +22,25 @@ html {
   color: var(--dark);
 }
 
+body {
+  margin: 0;
+}
+
+.color-main {
+  color: var(--main);
+}
+
 h1,
 h2,
 h3 {
   line-height: 1.2em;
   font-family: Neucha, sans-serif;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 72px;
+  text-align: left;
 }
 
 h2 {
@@ -42,12 +53,63 @@ h3 {
 
 section {
   max-width: 1110px;
-  text-align: center;
   padding: 100px 0;
+  margin: 0 auto;
 }
 
-.hello {
-  display: block;
+section img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
 
-  color: #fff;
+  height: 525px;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg::before {
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+
+  background: url("/images/background.png") no-repeat var(--semi-dark);
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.rel {
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--main);
+  color: inherit;
+
+  padding: 12px 24px;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--main-hover);
+}
+
+.multi-column {
+  columns: 2;
+  column-gap: 30px;
+}
+
+.multi-column p {
+  break-inside: avoid;
+  margin: 0;
+  padding: 15px 0;
 }
