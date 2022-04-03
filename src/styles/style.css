@@ -1,4 +1,50 @@
-/** CSS STYLE **/
+:root {
+  --white: #fff;
+  --semi-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --semi-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@font-face {
+  font-family: Neucha;
+  src: url("assets/Neucha-Regular.ttf");
+}
+
+html {
+  font: 16px OpenSans, sans-serif;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
+  font-family: Neucha, sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  text-align: center;
+  padding: 100px 0;
+}
 
 .hello {
   display: block;
