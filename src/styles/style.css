@@ -17,7 +17,7 @@
 }
 
 html {
-  font: 16px OpenSans, sans-serif;
+  font: 17px OpenSans, sans-serif;
   line-height: 1.6em;
   color: var(--dark);
 }
@@ -128,7 +128,7 @@ section {
   break-inside: avoid;
   margin: 0;
   padding: 15px 0;
-  font-size: 1.07em;
+  /* font-size: 1.07em; */
 }
 
 iframe {
@@ -256,7 +256,7 @@ main {
 .bias-header {
   display: flex;
   gap: 30px;
-  
+
   font-family: Neucha, sans-serif;
 }
 
@@ -281,6 +281,10 @@ main {
 
 .bias-section img {
   vertical-align: middle;
+}
+
+.bias-description {
+  line-height: 1.2em;
 }
 
 .em-1_5 {
