@@ -152,6 +152,26 @@ iframe {
   background-color: var(--dark);
 }
 
+.bg-brown {
+  color: var(--white);
+  background-color: var(--brown);
+  opacity: 0.9;
+}
+
+.bg-brown .bias-line-header {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.bg-brown .bleak {
+  color: var(--semi-white);
+}
+
+.bg-brown h2 {
+  text-align: left;
+  color: var(--main-hover);
+}
+
 .centered-axis-x {
   position: absolute;
   left: 50%;
@@ -243,6 +263,7 @@ main {
   text-align: left;
   margin-top: 0;
   margin-bottom: 30px;
+  color: inherit;
 }
 
 .bias-line-header {
