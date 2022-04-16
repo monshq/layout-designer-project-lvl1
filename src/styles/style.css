@@ -128,6 +128,7 @@ section {
   break-inside: avoid;
   margin: 0;
   padding: 15px 0;
+  font-size: 1.07em;
 }
 
 iframe {
