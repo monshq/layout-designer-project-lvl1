@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: Neucha;
-  src: url("/assets/Neucha-Regular.ttf");
+  src: url("../assets/Neucha-Regular.ttf");
 }
 
 html {
@@ -89,7 +89,7 @@ section {
   height: 100%;
   z-index: -10;
 
-  background: url("/images/background.png") no-repeat var(--brown);
+  background: url("../images/background.png") no-repeat var(--brown);
   background-size: cover;
   opacity: 0.1;
 
@@ -344,7 +344,7 @@ main {
   height: 50px;
   display: block;
 
-  background: url("/images/send.svg") no-repeat var(--main-hover);
+  background: url("../images/send.svg") no-repeat var(--main-hover);
   content: "";
 }
 
