@@ -30,6 +30,10 @@ body {
   color: var(--main);
 }
 
+.color-white {
+  color: var(--white);
+}
+
 h1,
 h2,
 h3 {
@@ -61,9 +65,13 @@ section {
   margin: 0 auto;
 }
 
-section img {
+.pad-100 {
+  padding-top: 100px;
+}
+
+.header-image {
   position: absolute;
-  top: 55px;
+  top: -45px;
   right: -270px;
 
   height: 525px;
@@ -90,6 +98,10 @@ section img {
 
 .rel {
   position: relative;
+}
+
+.abs {
+  position: absolute;
 }
 
 .button {
@@ -122,7 +134,6 @@ iframe {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 15%));
   margin: 0 auto;
   display: block;
-  position: relative;
 }
 
 .pad-30 {
@@ -135,4 +146,88 @@ iframe {
 
 .margin-reset {
   margin: 0;
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.centered-axis-x {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.iframe-wrap {
+  height: 469px;
+}
+
+.overflow {
+  padding-bottom: 0;
+}
+
+.nav-tiles {
+  padding: 0;
+  display: flex;
+
+  gap: 1em;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.nav-tiles + .nav-tiles {
+  margin-top: 1em;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.nav-tiles > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: block;
+}
+
+.nav-tile {
+  padding: 24px;
+
+  display: block;
+
+  height: 100%;
+  box-sizing: border-box;
+
+  background-color: var(--light);
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-tile:hover {
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.nav-tile:hover .nav-tile-title {
+  color: var(--white);
+}
+
+.nav-tile p {
+  margin: 0;
+}
+
+.nav-tile-title {
+  text-align: left;
+}
+
+.nav-headline {
+  font-size: 52px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-number {
+  /* padding-bottom: 40px; */
+  font: 64px Neucha;
+  line-height: 1;
 }
