@@ -128,7 +128,6 @@ section {
   break-inside: avoid;
   margin: 0;
   padding: 15px 0;
-  /* font-size: 1.07em; */
 }
 
 iframe {
@@ -149,6 +148,10 @@ iframe {
   margin: 0;
 }
 
+.bleak {
+  color: var(--semi-dark);
+}
+
 .bg-dark {
   background-color: var(--dark);
 }
@@ -157,20 +160,6 @@ iframe {
   color: var(--white);
   background-color: var(--brown);
   opacity: 0.9;
-}
-
-.bg-brown .bias-line-header {
-  color: var(--brown);
-  background-color: var(--white);
-}
-
-.bg-brown .bleak {
-  color: var(--semi-white);
-}
-
-.bg-brown h2 {
-  text-align: left;
-  color: var(--main-hover);
 }
 
 .centered-axis-x {
@@ -224,6 +213,10 @@ main {
   color: var(--dark);
 }
 
+.nav-tile-title {
+  text-align: left;
+}
+
 .nav-tile:hover {
   background-color: var(--main);
   color: var(--white);
@@ -237,10 +230,6 @@ main {
   margin: 0;
 }
 
-.nav-tile-title {
-  text-align: left;
-}
-
 .nav-headline {
   font-size: 52px;
   margin: 0;
@@ -248,8 +237,7 @@ main {
 }
 
 .nav-number {
-  /* padding-bottom: 40px; */
-  font: 64px Neucha;
+  font: 64px Neucha, sans-serif;
   line-height: 1;
 }
 
@@ -287,7 +275,7 @@ main {
   line-height: 1.2em;
 }
 
-.em-1_5 {
+.bias-common-title {
   font-size: 1.5em;
 }
 
@@ -299,10 +287,95 @@ main {
   font-size: 3em;
 }
 
-.bleak {
+.multi-column .no-pad-top {
+  padding-top: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.footer > * {
+  flex: 1 1 0;
+}
+
+.footer h3 {
+  margin: 1em 1.5em;
+  text-align: left;
+}
+
+.footer label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.email-input {
+  display: flex;
+}
+
+.email-input input {
+  height: 50px;
+  width: calc(100% - 100px);
+
+  margin: 0;
+  padding: 15px;
+  display: block;
+
+  box-sizing: border-box;
+}
+
+.email-input input::placeholder {
   color: var(--semi-dark);
 }
 
-.multi-column .no-pad-top {
-  padding-top: 0;
+.email-input button {
+  width: 70px;
+  height: 50px;
+
+  margin: 0;
+}
+
+.email-input button::before {
+  width: 70px;
+  height: 50px;
+  display: block;
+
+  background: url("/images/send.svg") no-repeat var(--main-hover);
+  content: "";
+}
+
+.email-form {
+  padding: 15px;
+}
+
+.email-form a {
+  color: var(--white);
+}
+
+.footer-links {
+  padding-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 0.7em;
+}
+
+.bg-brown .bias-line-header {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.bg-brown .bleak {
+  color: var(--semi-white);
+}
+
+.bg-brown h2 {
+  text-align: left;
+  color: var(--main-hover);
 }
