@@ -89,7 +89,7 @@ section {
   height: 100%;
   z-index: -10;
 
-  background: url("/images/background.png") no-repeat var(--semi-dark);
+  background: url("/images/background.png") no-repeat var(--brown);
   background-size: cover;
   opacity: 0.1;
 
@@ -230,4 +230,49 @@ main {
   /* padding-bottom: 40px; */
   font: 64px Neucha;
   line-height: 1;
+}
+
+.bias-header {
+  display: flex;
+  gap: 30px;
+  
+  font-family: Neucha, sans-serif;
+}
+
+.bias-header h2 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.bias-line-header {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  background-color: var(--brown);
+  font: 1em OpenSans, sans-serif;
+  padding: 5px 15px;
+  color: var(--light);
+  text-align: left;
+  font-weight: bold;
+}
+
+.bias-section img {
+  vertical-align: middle;
+}
+
+.em-1_5 {
+  font-size: 1.5em;
+}
+
+.em-2 {
+  font-size: 2em;
+}
+
+.em-3 {
+  font-size: 3em;
+}
+
+.bleak {
+  color: var(--semi-dark);
 }
