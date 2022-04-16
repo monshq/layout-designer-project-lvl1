@@ -302,3 +302,7 @@ main {
 .bleak {
   color: var(--semi-dark);
 }
+
+.multi-column .no-pad-top {
+  padding-top: 0;
+}
